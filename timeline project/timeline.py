@@ -10,4 +10,9 @@ def timeline():
     #2.1 deal cards to each player
     #2.3 pick starting player
     #3. play game (player turns)
-    #4. show who winner is
+    #3.1 starting player turn
+    #3.2 select next player
+    #3.3 take turn
+    #3.4 check if player won/game is over, if true go to 4
+    #3.5 go back to 3.2
+    #4 show who winner is     
