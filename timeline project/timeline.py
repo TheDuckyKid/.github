@@ -1,7 +1,7 @@
 print("hello timeline")
 
 #play timeline
-def timeline():
+#def timeline():
     #1. game menu
     #1.1 select number of players
     #1.2 bots [on or of]
@@ -16,3 +16,24 @@ def timeline():
     #3.4 check if player won/game is over, if true go to 4
     #3.5 go back to 3.2
     #4 show who winner is     
+
+def timeline():
+    print("starting timeline game")
+    showGameMenu()
+    setupNewGame()
+    play()
+    showWinner()
+
+def showGameMenu():
+    pass
+
+def setupNewGame():
+    pass
+
+def play():
+    pass
+
+def showWinner():
+    pass
+
+timeline()
