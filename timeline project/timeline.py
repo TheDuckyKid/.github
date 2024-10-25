@@ -25,15 +25,35 @@ def timeline():
     showWinner()
 
 def showGameMenu():
-    pass
+    print("test gamemenu")
+    print("Welcome to The Timeline Game")
+    playernums = int(input("Please enter the amount of players you have: "))
+    bots = input("Would you like bots: (Yes/No) ")
+    
+
+
+
 
 def setupNewGame():
-    pass
+    print("test setupNewGame")
 
 def play():
-    pass
+    print("test play")
+    currentPlayer = 1
+    while not gameOver():
+        takeTurn(currentPlayer)
+        currentPlayer = pickNextPlayer
+
+def takeTurn():
+    print(f"player{player} is taking their turn...")
+
+def gameOver():
+    print("test gameover")
+
+def pickNextPlayer():
+    print("test picknextplayer")
 
 def showWinner():
-    pass
+    print("test play")
 
 timeline()
