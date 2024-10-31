@@ -29,12 +29,10 @@ def showGameMenu():
     print("Welcome to The Timeline Game")
     playernums = int(input("Please enter the amount of players you have: "))
     bots = input("Would you like bots: (Yes/No) ")
-    
+    return bots , playernums
 
 
-
-
-def setupNewGame():
+def setupNewGame(playernums,bots):
     print("test setupNewGame")
 
 def play():
