@@ -6,14 +6,21 @@
 def showmenu():
     print("menu is showing")
     numberofplayers = int(input("type number of players"))
+    return numberofplayers
 
+def getstartingcards():
+    return "A"
 
 def setupgame(numberofplayers):
     print("setting up game")
+    #get player names
+    names = []
+
     cards = []
     for i in range(numberofplayers):
         cards.append(getstartingcards())
-    return cards
+        names.append("Bob")
+    return [cards,names]
 
 
 def play():
@@ -24,8 +31,9 @@ def showwinner():
 
 def playgame():
     print("game is running")
-    showmenu()
-    setupgame()
+    numberofplayers = showmenu()
+    set_result = setupgame(numberofplayers)
+    cards = set_result[0]
     play()
     showwinner()
 playgame()

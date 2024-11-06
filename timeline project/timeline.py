@@ -21,8 +21,7 @@ print("hello timeline")
 
 def timeline():
     print("starting timeline game")
-    showGameMenu()
-    setupNewGame(playernums)
+    setupNewGame(showGameMenu())
     play()
     showWinner()
 
@@ -39,7 +38,6 @@ def showGameMenu():
         difficulty  = input("What difficulty: ")
         return difficulty
     return playernums
-    return bots
 
 
 def setupNewGame(playernums):
@@ -63,6 +61,7 @@ def play():
 def takeTurn():
     #3.2 select next player 
     print(f"player{player} is taking their turn...")
+
 
 
 def gameOver():
