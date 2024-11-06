@@ -1,3 +1,5 @@
+import random
+
 print("hello timeline")
 
 #play timeline
@@ -16,14 +18,11 @@ print("hello timeline")
     #3.4 check if player won/game is over, if true go to 4
     #3.5 go back to 3.2
     #4 show who winner is     
-ducks = {
-    ""
-}
 
 def timeline():
     print("starting timeline game")
     showGameMenu()
-    setupNewGame(bots,playernums)
+    setupNewGame(playernums)
     play()
     showWinner()
 
@@ -43,7 +42,7 @@ def showGameMenu():
     return bots
 
 
-def setupNewGame(playernums,bots):
+def setupNewGame(playernums):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
@@ -53,6 +52,9 @@ def setupNewGame(playernums,bots):
 def play():
     print("test play")
     currentPlayer = 1 #default number for testing
+    #3.1 starting a player's turm
+    takeTurn()
+    #3.2 seleting next player
 
     while not gameOver():
         takeTurn(currentPlayer)
@@ -71,6 +73,6 @@ def pickNextPlayer():
     print("test picknextplayer")
 
 def showWinner():
-    print("test play")
+    print("test winner")
 
 timeline()

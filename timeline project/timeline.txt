@@ -1,0 +1,5 @@
+ducks = {
+    "1961" : "Spacewar! is made",
+    "1972" : "The Magnavox Odyssey releases",
+    
+}
