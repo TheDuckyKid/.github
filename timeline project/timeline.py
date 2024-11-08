@@ -19,10 +19,12 @@ print("hello timeline")
     #3.5 go back to 3.2
     #4 show who winner is     
 
-def timeline():
+deck = "timeline.txt"
+
+def timeline(deck):
     print("starting timeline game")
     s_list = showGameMenu()
-    setupNewGame(s_list[0],s_list[1])
+    setupNewGame(s_list[0],s_list[1],deck)
     play()
     showWinner()
 
@@ -45,7 +47,7 @@ def setupNewGame(playernums,bots):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
-    
+
 
     #2.2
 
