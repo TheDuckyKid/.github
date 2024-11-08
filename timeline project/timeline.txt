@@ -1,5 +1,9 @@
-ducks = {
-    "1961" : "Spacewar! is made",
-    "1972" : "The Magnavox Odyssey releases",
-    
+template = {
+    "title" : "year",
+    "month" : "description"
+}
+
+item = {
+    "Spacewar!" : "1962",
+    "February" : "The first Video game"
 }

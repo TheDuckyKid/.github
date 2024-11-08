@@ -1,4 +1,4 @@
-import random
+#import random
 
 print("hello timeline")
 
@@ -21,7 +21,8 @@ print("hello timeline")
 
 def timeline():
     print("starting timeline game")
-    setupNewGame(showGameMenu())
+    s_list = showGameMenu()
+    setupNewGame(s_list[0],s_list[1])
     play()
     showWinner()
 
@@ -37,13 +38,14 @@ def showGameMenu():
     if bots == "Yes" or bots == "yes" or bots == "Y" or bots == "y":
         difficulty  = input("What difficulty: ")
         return difficulty
-    return playernums
+    return [playernums,bots]
 
 
-def setupNewGame(playernums):
+def setupNewGame(playernums,bots):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
+    
 
     #2.2
 
