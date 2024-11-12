@@ -1,4 +1,5 @@
-#import random
+import random
+import json
 
 print("hello timeline")
 
@@ -38,16 +39,21 @@ def showGameMenu():
     bots = input("Would you like bots: (Yes/No) ")
     #1.3 difficulty
     if bots == "Yes" or bots == "yes" or bots == "Y" or bots == "y":
-        difficulty  = input("What difficulty: ")
+        difficulty  = input("What difficulty:[1-10] ")
         return difficulty
     return [playernums,bots]
 
 
-def setupNewGame(playernums,bots):
+def setupNewGame(playernums,bots,deck):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
-
+    print("Distributing cards")
+    for duck in playernums:
+        cardchoice = random.randrange(0,20)
+        print("Card number #" + cardchoice + "for player: " + duck)
+        #way to check if card number is already taken
+        #if cardchoice =
 
     #2.2
 
@@ -78,4 +84,4 @@ def pickNextPlayer():
 def showWinner():
     print("test winner")
 
-timeline()
+timeline(deck)
