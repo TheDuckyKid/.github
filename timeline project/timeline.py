@@ -20,12 +20,12 @@ print("hello timeline")
     #3.5 go back to 3.2
     #4 show who winner is     
 
-deck = "timeline.txt"
+#deck = "timeline.txt"
 
 def timeline(deck):
     print("starting timeline game")
     s_list = showGameMenu()
-    setupNewGame(s_list[0],s_list[1],deck)
+    setupNewGame(s_list[0])
     play()
     showWinner()
 
@@ -43,17 +43,28 @@ def showGameMenu():
         return difficulty
     return [playernums,bots]
 
+deck  = {
+    "title" : "placeholder",
+    "year" : 2,
+    "month" :3,
+    "description" :4
+}
 
-def setupNewGame(playernums,bots,deck):
+def setupNewGame(Playercount):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
+    cardcheck = []
     print("Distributing cards")
-    for duck in playernums:
-        cardchoice = random.randrange(0,20)
-        print("Card number #" + cardchoice + "for player: " + duck)
+    for duck in range(Playercount):
+        cardchoice = random.randrange(0,19)
+        print("Card number #" + str(cardchoice) + "for player: " + str(duck))
         #way to check if card number is already taken
-        #if cardchoice =
+        cardcheck.append(cardchoice)
+        print(cardcheck)
+        #if cardchoice = any thing in card check
+
+
 
     #2.2
 
