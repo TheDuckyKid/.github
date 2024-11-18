@@ -63,7 +63,10 @@ def setupNewGame(Playercount):
         cardcheck.append(cardchoice)
         print(cardcheck)
         #if cardchoice = any thing in card check
-
+        for card in cardcheck:
+            if cardchoice == cardcheck[card]:
+                print("yay")
+            print(card)
 
 
     #2.2
@@ -82,6 +85,7 @@ def play():
 def takeTurn():
     #3.2 select next player 
     print(f"player{player} is taking their turn...")
+
 
 
 
