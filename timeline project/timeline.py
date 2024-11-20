@@ -35,6 +35,8 @@ def showGameMenu():
     print("Welcome to The Timeline Game")
     #1.1 select/defining the number of players
     playernums = int(input("Please enter the amount of players you have: "))
+    for player in playernums:
+        print("test pls work")
     #1.2 asking the user if they would like to enable bots
     bots = input("Would you like bots: (Yes/No) ")
     #1.3 difficulty
@@ -49,7 +51,7 @@ deck  = {
     "month" :3,
     "description" :4
 }
-
+   
 def setupNewGame(Playercount):
     #2 setup new game
     print("test setupNewGame")
