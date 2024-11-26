@@ -22,8 +22,11 @@ print("hello timeline")
 
 #deck = "timeline.txt"
 
+#main timeline function
 def timeline(deck):
+    #print statement stating that the timeline game has started
     print("starting timeline game")
+    #list  
     s_list = showGameMenu()
     setupNewGame(s_list[0])
     play()
