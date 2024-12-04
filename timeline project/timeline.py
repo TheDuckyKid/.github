@@ -28,7 +28,7 @@ def timeline(deck):
     print("starting timeline game")
     #list  
     s_list = showGameMenu()
-    setupNewGame(s_list[0])
+    setupNewGame(s_list[0],s_list[1],s_list[2])
     play()
     showWinner()
 
@@ -38,24 +38,27 @@ def showGameMenu():
     print("Welcome to The Timeline Game")
     #1.1 select/defining the number of players
     playernums = int(input("Please enter the amount of players you have: "))
+    playernames = []
     for duck in range(playernums):
-        print("test pls work")
+        duck = input("Please Input your name player" + str(duck+ 1) + ": ")
+        playernames.append(duck)
     #1.2 asking the user if they would like to enable bots
     bots = input("Would you like bots: (Yes/No) ")
     #1.3 difficulty
     if bots == "Yes" or bots == "yes" or bots == "Y" or bots == "y":
         difficulty  = input("What difficulty:[1-10] ")
         return difficulty
-    return [playernums,bots]
+    print(duck)
+    return [playernums,playernames,bots]
 
 deck  = {
     "title" : "placeholder",
     "year" : 2,
     "month" :3,
-    "description" :4
+    "description" :"text here"
 }
    
-def setupNewGame(Playercount):
+def setupNewGame(Playercount,PlayerNames,BotBool):
     #2 setup new game
     print("test setupNewGame")
     #2.1 deal cards to player(s)/bots
@@ -63,7 +66,7 @@ def setupNewGame(Playercount):
     print("Distributing cards")
     for duck in range(Playercount):
         cardchoice = random.randrange(0,19)
-        print("Card number #" + str(cardchoice) + "for player: " + str(duck))
+        print("Card number #" + str(cardchoice) + "for player: " + PlayerNames[duck])
         #way to check if card number is already taken
         cardcheck.append(cardchoice)
         print(cardcheck)
@@ -72,7 +75,6 @@ def setupNewGame(Playercount):
             if cardchoice == cardcheck[card]:
                 print("yay")
             print(card)
-
 
     #2.2
 
