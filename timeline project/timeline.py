@@ -72,7 +72,7 @@ def setupNewGame(Playercount,PlayerNames,BotBool):
         print(cardcheck)
         #if cardchoice = any thing in card check
         for card in cardcheck:
-            if cardchoice == cardcheck[card]:
+            if cardchoice == cardcheck:
                 print("yay")
             print(card)
 
