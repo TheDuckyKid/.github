@@ -24,6 +24,7 @@ print("hello timeline")
 
 #main timeline function
 def timeline(deck):
+    import json
     #print statement stating that the timeline game has started
     print("starting timeline game")
     #list  
@@ -92,7 +93,7 @@ def play():
 def takeTurn():
     #3.2 select next player 
     print(f"player{player} is taking their turn...")
-
+    random.randint()
 
 
 
