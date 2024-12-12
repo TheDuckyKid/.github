@@ -76,25 +76,27 @@ def setupNewGame(Playercount,PlayerNames,BotBool):
             if cardchoice == cardcheck:
                 print("yay")
             print(card)
-
+    return cardcheck
     #2.2
 
 def play():
     print("test play")
     currentPlayer = 1 #default number for testing
     #3.1 starting a player's turm
-    takeTurn()
+    takeTurn(currentPlayer)
     #3.2 seleting next player
 
     while not gameOver():
         takeTurn(currentPlayer)
         currentPlayer = pickNextPlayer
 
-def takeTurn():
+def takeTurn(playerindex):
     #3.2 select next player 
-    print(f"player{player} is taking their turn...")
-    random.randint()
-
+    #print(f"player{player} is taking their turn...")
+    coinflip = 1 or 2
+    for player in playerindex:
+        print(player)
+    
 
 
 def gameOver():
