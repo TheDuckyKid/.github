@@ -1,9 +1,0 @@
-template = {
-    "title" : "year",
-    "month" : "description"
-}
-
-item = {
-    "Spacewar!" : "1962",
-    "February" : "The first Video game"
-}

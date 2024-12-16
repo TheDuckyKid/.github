@@ -1,112 +1,118 @@
 import random
-import json
 
-print("hello timeline")
+print("Hello, Timeline!")
 
-#play timeline
-#def timeline():
-    #1. game menu
-    #1.1 select number of players
-    #1.2 bots [on or of]
-    #1.3 difficulty [level]
-    #2. setup new game
-    #2.1 deal cards to each player
-    #2.3 pick starting player
-    #3. play game (player turns)
-    #3.1 starting player turn
-    #3.2 select next player
-    #3.3 take turn
-    #3.4 check if player won/game is over, if true go to 4
-    #3.5 go back to 3.2
-    #4 show who winner is     
-
-#deck = "timeline.txt"
-
-#main timeline function
+# Main timeline function
 def timeline(deck):
-    import json
-    #print statement stating that the timeline game has started
-    print("starting timeline game")
-    #list  
-    s_list = showGameMenu()
-    setupNewGame(s_list[0],s_list[1],s_list[2])
-    play()
-    showWinner()
+    print("Starting the Timeline game...")
+    game_settings = showGameMenu()
+    player_count, player_names, bots_enabled, difficulty = game_settings
+    setupNewGame(player_count, player_names, bots_enabled)
+    winner = play(player_count, player_names, bots_enabled)
+    showWinner(winner)
 
 def showGameMenu():
-    print("test gamemenu")
-    #1 game menu
     print("Welcome to The Timeline Game")
-    #1.1 select/defining the number of players
-    playernums = int(input("Please enter the amount of players you have: "))
-    playernames = []
-    for duck in range(playernums):
-        duck = input("Please Input your name player" + str(duck+ 1) + ": ")
-        playernames.append(duck)
-    #1.2 asking the user if they would like to enable bots
-    bots = input("Would you like bots: (Yes/No) ")
-    #1.3 difficulty
-    if bots == "Yes" or bots == "yes" or bots == "Y" or bots == "y":
-        difficulty  = input("What difficulty:[1-10] ")
-        return difficulty
-    print(duck)
-    return [playernums,playernames,bots]
-
-deck  = {
-    "title" : "placeholder",
-    "year" : 2,
-    "month" :3,
-    "description" :"text here"
-}
-   
-def setupNewGame(Playercount,PlayerNames,BotBool):
-    #2 setup new game
-    print("test setupNewGame")
-    #2.1 deal cards to player(s)/bots
-    cardcheck = []
-    print("Distributing cards")
-    for duck in range(Playercount):
-        cardchoice = random.randrange(0,19)
-        print("Card number #" + str(cardchoice) + "for player: " + PlayerNames[duck])
-        #way to check if card number is already taken
-        cardcheck.append(cardchoice)
-        print(cardcheck)
-        #if cardchoice = any thing in card check
-        for card in cardcheck:
-            if cardchoice == cardcheck:
-                print("yay")
-            print(card)
-    return cardcheck
-    #2.2
-
-def play():
-    print("test play")
-    currentPlayer = 1 #default number for testing
-    #3.1 starting a player's turm
-    takeTurn(currentPlayer)
-    #3.2 seleting next player
-
-    while not gameOver():
-        takeTurn(currentPlayer)
-        currentPlayer = pickNextPlayer
-
-def takeTurn(playerindex):
-    #3.2 select next player 
-    #print(f"player{player} is taking their turn...")
-    coinflip = 1 or 2
-    for player in playerindex:
-        print(player)
     
+    # Select the number of players
+    player_count = int(input("Please enter the number of players: "))
+    player_names = []
+    for i in range(player_count):
+        name = input(f"Please enter the name of Player {i + 1}: ")
+        player_names.append(name)
+    
+    # Ask if bots should be enabled
+    bots_enabled = input("Would you like to add bots? (Yes/No): ").strip().lower() in ['yes', 'y']
+    
+    # Set difficulty if bots are enabled
+    difficulty = None
+    if bots_enabled:
+        difficulty = int(input("Set the difficulty level [1-10]: "))
+    
+    return player_count, player_names, bots_enabled, difficulty
 
+def setupNewGame(player_count, player_names, bots_enabled):
+    print("Setting up a new game...")
+    # Shuffle and deal cards
+    deck = generateDeck()
+    player_hands = {name: [] for name in player_names}
 
-def gameOver():
-    #3.4 
-    print("test gameover")
+    if bots_enabled:
+        bot_name = "Bot"
+        player_names.append(bot_name)
+        player_hands[bot_name] = []
+    
+    # Deal cards
+    print("Distributing cards to players...")
+    for _ in range(5):  # Give each player 5 cards
+        for player in player_names:
+            card = deck.pop(random.randrange(len(deck)))
+            player_hands[player].append(card)
+    
+    print("Player hands:")
+    for player, hand in player_hands.items():
+        print(f"{player}: {hand}")
+    
+    return player_hands
 
-def pickNextPlayer():
-    print("test picknextplayer")
+def generateDeck():
+    # Generate a simple deck with placeholder events
+    return [
+        {"title": f"Event {i}", "year": random.randint(1900, 2020)}
+        for i in range(20)
+    ]
 
-def showWinner():
-    print("test winner")
+def play(player_count, player_names, bots_enabled):
+    print("Starting the game...")
+    current_player_index = 0
+    game_active = True
+    timeline = []  # Timeline starts empty
+    
+    while game_active:
+        current_player = player_names[current_player_index]
+        print(f"{current_player}'s turn!")
+        
+        # Take turn
+        action_result = takeTurn(current_player, timeline)
+        
+        # Check if the game is over
+        if action_result == "win":
+            return current_player
+        
+        # Move to the next player
+        current_player_index = (current_player_index + 1) % player_count
 
-timeline(deck)
+def takeTurn(player, timeline):
+    print(f"{player} is taking their turn...")
+    
+    if len(timeline) == 0:
+        # First turn: any card can be played
+        print("The timeline is empty. You can play any card.")
+        return "continue"
+    
+    # Show the timeline to the player
+    print("Current timeline:")
+    for event in sorted(timeline, key=lambda x: x["year"]):
+        print(f"{event['title']} - {event['year']}")
+    
+    # Simulate playing a card (in a real game, input would be handled here)
+    played_card = {"title": f"Played by {player}", "year": random.randint(1900, 2020)}
+    print(f"{player} plays: {played_card['title']} ({played_card['year']})")
+    
+    # Check if the card fits in the timeline
+    if isCardInTimeline(played_card, timeline):
+        print(f"{played_card['title']} fits correctly in the timeline!")
+        timeline.append(played_card)
+        return "continue"
+    else:
+        print(f"{played_card['title']} does NOT fit in the timeline!")
+        return "lose"
+
+def isCardInTimeline(card, timeline):
+    years = [event["year"] for event in timeline]
+    return min(years) <= card["year"] <= max(years)
+
+def showWinner(winner):
+    print(f"Congratulations, {winner}! You have won the game!")
+
+timeline("timeline.json")

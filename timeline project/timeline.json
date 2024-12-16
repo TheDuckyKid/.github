@@ -1,0 +1,102 @@
+[
+    {
+        "title": "1972",
+        "month": "November",
+        "description": "The first commercial video game, Pong, was released by Atari."
+    },
+    {
+        "title": "1980",
+        "month": "May",
+        "description": "Pac-Man was released by Namco, becoming one of the most famous arcade games."
+    },
+    {
+        "title": "1983",
+        "month": "July",
+        "description": "The video game industry crash occurred, impacting North America heavily."
+    },
+    {
+        "title": "1985",
+        "month": "September",
+        "description": "Nintendo released the Nintendo Entertainment System (NES) in North America."
+    },
+    {
+        "title": "1989",
+        "month": "April",
+        "description": "Nintendo released the Game Boy, revolutionizing portable gaming."
+    },
+    {
+        "title": "1991",
+        "month": "June",
+        "description": "Sonic the Hedgehog was released by Sega, becoming a major rival to Mario."
+    },
+    {
+        "title": "1994",
+        "month": "December",
+        "description": "Sony launched the first PlayStation console, entering the gaming market."
+    },
+    {
+        "title": "1996",
+        "month": "June",
+        "description": "Nintendo released the Nintendo 64, introducing 3D gaming to consoles."
+    },
+    {
+        "title": "1998",
+        "month": "March",
+        "description": "The Legend of Zelda: Ocarina of Time was released, setting a benchmark for 3D adventure games."
+    },
+    {
+        "title": "2000",
+        "month": "October",
+        "description": "Sony released the PlayStation 2, which would become the best-selling console of all time."
+    },
+    {
+        "title": "2001",
+        "month": "November",
+        "description": "Microsoft entered the gaming industry with the launch of the Xbox and Halo: Combat Evolved."
+    },
+    {
+        "title": "2004",
+        "month": "November",
+        "description": "World of Warcraft was released, becoming the most successful MMORPG."
+    },
+    {
+        "title": "2006",
+        "month": "November",
+        "description": "Nintendo released the Wii, introducing motion-based gaming."
+    },
+    {
+        "title": "2007",
+        "month": "October",
+        "description": "Valve released The Orange Box, which included Portal, Team Fortress 2, and Half-Life 2: Episode Two."
+    },
+    {
+        "title": "2010",
+        "month": "April",
+        "description": "Minecraft was released in its alpha version, becoming one of the best-selling games ever."
+    },
+    {
+        "title": "2013",
+        "month": "November",
+        "description": "Sony released the PlayStation 4, ushering in the eighth generation of consoles."
+    },
+    {
+        "title": "2016",
+        "month": "July",
+        "description": "Pokémon GO was released, popularizing augmented reality gaming."
+    },
+    {
+        "title": "2017",
+        "month": "March",
+        "description": "Nintendo released the Nintendo Switch, blending handheld and console gaming."
+    },
+    {
+        "title": "2020",
+        "month": "December",
+        "description": "Cyberpunk 2077 was released, drawing attention for its troubled launch despite years of anticipation."
+    },
+    {
+        "title": "2023",
+        "month": "June",
+        "description": "The Legend of Zelda: Tears of the Kingdom was released, becoming a critically acclaimed sequel to Breath of the Wild."
+    }
+]
