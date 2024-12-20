@@ -1,102 +1,122 @@
 [
     {
-        "title": "1972",
-        "month": "November",
-        "description": "The first commercial video game, Pong, was released by Atari."
+        "title": "The First Video Game: Pong Released",
+        "year": 1972,
+        "month": 11,
+        "description": "Pong, one of the first commercially successful video games, was released by Atari."
     },
     {
-        "title": "1980",
-        "month": "May",
-        "description": "Pac-Man was released by Namco, becoming one of the most famous arcade games."
+        "title": "Nintendo Entertainment System (NES) Launches",
+        "year": 1983,
+        "month": 7,
+        "description": "Nintendo introduced the NES, revolutionizing the home gaming market."
     },
     {
-        "title": "1983",
-        "month": "July",
-        "description": "The video game industry crash occurred, impacting North America heavily."
+        "title": "Tetris Released",
+        "year": 1984,
+        "month": 6,
+        "description": "The puzzle game Tetris was created by Alexey Pajitnov in the Soviet Union."
     },
     {
-        "title": "1985",
-        "month": "September",
-        "description": "Nintendo released the Nintendo Entertainment System (NES) in North America."
+        "title": "Game Boy Released by Nintendo",
+        "year": 1989,
+        "month": 4,
+        "description": "Nintendo's Game Boy handheld console was released, accompanied by Tetris."
     },
     {
-        "title": "1989",
-        "month": "April",
-        "description": "Nintendo released the Game Boy, revolutionizing portable gaming."
+        "title": "Sony PlayStation Released",
+        "year": 1994,
+        "month": 12,
+        "description": "Sony entered the gaming industry with the launch of the PlayStation."
     },
     {
-        "title": "1991",
-        "month": "June",
-        "description": "Sonic the Hedgehog was released by Sega, becoming a major rival to Mario."
+        "title": "Pokémon Red and Blue Released",
+        "year": 1996,
+        "month": 2,
+        "description": "The Pokémon franchise began with the release of Pokémon Red and Blue in Japan."
     },
     {
-        "title": "1994",
-        "month": "December",
-        "description": "Sony launched the first PlayStation console, entering the gaming market."
+        "title": "Half-Life Revolutionizes First-Person Shooters",
+        "year": 1998,
+        "month": 11,
+        "description": "Valve's Half-Life set a new standard for storytelling in first-person shooters."
     },
     {
-        "title": "1996",
-        "month": "June",
-        "description": "Nintendo released the Nintendo 64, introducing 3D gaming to consoles."
+        "title": "The Sims Released",
+        "year": 2000,
+        "month": 2,
+        "description": "Maxis released The Sims, a life simulation game that became a cultural phenomenon."
     },
     {
-        "title": "1998",
-        "month": "March",
-        "description": "The Legend of Zelda: Ocarina of Time was released, setting a benchmark for 3D adventure games."
+        "title": "Xbox Launched by Microsoft",
+        "year": 2001,
+        "month": 11,
+        "description": "Microsoft launched the Xbox, marking its entry into the console gaming market."
     },
     {
-        "title": "2000",
-        "month": "October",
-        "description": "Sony released the PlayStation 2, which would become the best-selling console of all time."
+        "title": "World of Warcraft Launches",
+        "year": 2004,
+        "month": 11,
+        "description": "Blizzard released World of Warcraft, which became a massively popular MMORPG."
     },
     {
-        "title": "2001",
-        "month": "November",
-        "description": "Microsoft entered the gaming industry with the launch of the Xbox and Halo: Combat Evolved."
+        "title": "Nintendo Wii Released",
+        "year": 2006,
+        "month": 11,
+        "description": "Nintendo's Wii introduced motion controls and expanded gaming to new audiences."
     },
     {
-        "title": "2004",
-        "month": "November",
-        "description": "World of Warcraft was released, becoming the most successful MMORPG."
+        "title": "Minecraft Initial Release",
+        "year": 2009,
+        "month": 5,
+        "description": "Markus Persson released the first version of Minecraft, a sandbox-building game."
     },
     {
-        "title": "2006",
-        "month": "November",
-        "description": "Nintendo released the Wii, introducing motion-based gaming."
+        "title": "Angry Birds Released",
+        "year": 2009,
+        "month": 12,
+        "description": "Rovio Entertainment released Angry Birds, a popular mobile game."
     },
     {
-        "title": "2007",
-        "month": "October",
-        "description": "Valve released The Orange Box, which included Portal, Team Fortress 2, and Half-Life 2: Episode Two."
+        "title": "The Last of Us Released",
+        "year": 2013,
+        "month": 6,
+        "description": "Naughty Dog's The Last of Us redefined storytelling in gaming."
     },
     {
-        "title": "2010",
-        "month": "April",
-        "description": "Minecraft was released in its alpha version, becoming one of the best-selling games ever."
+        "title": "PlayStation 4 Released",
+        "year": 2013,
+        "month": 11,
+        "description": "Sony launched the PlayStation 4, dominating the eighth console generation."
     },
     {
-        "title": "2013",
-        "month": "November",
-        "description": "Sony released the PlayStation 4, ushering in the eighth generation of consoles."
+        "title": "Pokémon Go Takes Over the World",
+        "year": 2016,
+        "month": 7,
+        "description": "Niantic's Pokémon Go popularized augmented reality gaming on mobile devices."
     },
     {
-        "title": "2016",
-        "month": "July",
-        "description": "Pokémon GO was released, popularizing augmented reality gaming."
+        "title": "Nintendo Switch Released",
+        "year": 2017,
+        "month": 3,
+        "description": "Nintendo's hybrid console Switch became a massive success."
     },
     {
-        "title": "2017",
-        "month": "March",
-        "description": "Nintendo released the Nintendo Switch, blending handheld and console gaming."
+        "title": "Fortnite Battle Royale Released",
+        "year": 2017,
+        "month": 9,
+        "description": "Epic Games released Fortnite Battle Royale, reshaping online multiplayer gaming."
     },
     {
-        "title": "2020",
-        "month": "December",
-        "description": "Cyberpunk 2077 was released, drawing attention for its troubled launch despite years of anticipation."
+        "title": "Among Us Gains Popularity",
+        "year": 2020,
+        "month": 8,
+        "description": "Among Us became a cultural phenomenon during the COVID-19 pandemic."
     },
     {
-        "title": "2023",
-        "month": "June",
-        "description": "The Legend of Zelda: Tears of the Kingdom was released, becoming a critically acclaimed sequel to Breath of the Wild."
+        "title": "Elden Ring Released",
+        "year": 2022,
+        "month": 2,
+        "description": "FromSoftware's Elden Ring became a critically acclaimed open-world RPG."
     }
 ]

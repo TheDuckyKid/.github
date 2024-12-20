@@ -2,6 +2,7 @@ import json
 import random
 import os
 
+print("Current Working Directory:", os.getcwd())
 print("Hello, Timeline!")
 
 def loadDeck(file_path):
@@ -16,31 +17,6 @@ def loadDeck(file_path):
     except json.JSONDecodeError:
         print("Error: Failed to decode JSON. Please check the file's format.")
         return []
-
-def chooseDeck():
-    print("Choose a deck to play with:")
-    deck_dir = "timeline project"  # Directory containing JSON files
-    try:
-        files = [f for f in os.listdir(deck_dir) if f.endswith(".json")]
-        if not files:
-            print("No JSON files found in the directory.")
-            return None
-        
-        for i, file in enumerate(files):
-            print(f"{i + 1}. {file}")
-
-        choice = int(input("Enter the number of the deck you want to load: "))
-        if 1 <= choice <= len(files):
-            return os.path.join(deck_dir, files[choice - 1])
-        else:
-            print("Invalid choice. Please try again.")
-            return chooseDeck()
-    except FileNotFoundError:
-        print("Error: Deck directory not found.")
-        return None
-    except ValueError:
-        print("Error: Invalid input. Please enter a number.")
-        return chooseDeck()
 
 def showGameMenu():
     print("Welcome to The Timeline Game")
@@ -117,10 +93,9 @@ def showWinner(winner):
     print("Congratulations, " + winner + "! You have won the game!")
 
 def timeline():
-    json_file = chooseDeck()
-    if not json_file:
-        return
-
+    # Hardcoded path to the JSON file
+    json_file = "deck.json"
+    
     deck = loadDeck(json_file)
     if not deck:
         return
